@@ -1,0 +1,9 @@
+{
+ "argv": [
+"/global/homes/j/jsull/nb_dir/kernel_cosmosis.sh",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Cosmosis-nb",
+ "language": "python"
+}
