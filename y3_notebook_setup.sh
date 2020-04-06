@@ -7,12 +7,12 @@ COSMOSIS_SRC_DIR_copy=$COSMOSIS_SRC_DIR
 conda deactivate
 conda deactivate
 conda env create -f environment.yml
-source activate cosmosis-nb1
-python -m ipykernel install --user --name cosmosis-nb1 --display-name Cosmosis-nb1
+source activate cosmosis-nbt
+python -m ipykernel install --user --name cosmosis-nbt --display-name Cosmosis-nbt
 #edit kernel spec and helper script
 kernelshell="${PWD}/kernel_cosmosis.sh"
 python add_line.py ./kernel.json $kernelshell 
-cp kernel.json $HOME/.local/share/jupyter/kernels/cosmosis-nb1/kernel.json
+cp kernel.json $HOME/.local/share/jupyter/kernels/cosmosis-nbt/kernel.json
 chmod u+x kernel_cosmosis.sh
 python add_line.py ./kernel_cosmosis.sh $COSMOSIS_SRC_DIR_copy 
 #get bayesfast
