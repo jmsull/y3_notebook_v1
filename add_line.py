@@ -18,6 +18,6 @@ elif( 'kernel_cosmosis' in filen):
 
 	with open(filen, "w") as out_file:
 		for line in buf:
-			if line == 'source activate cosmosis-nbtt\n':
+			if line == 'source activate cosmosis-nbf\n':
 				line = line + 'export COSMOSIS_SRC_DIR="'+path+'"\n'
 			out_file.write(line)
