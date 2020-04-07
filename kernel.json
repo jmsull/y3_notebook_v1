@@ -3,6 +3,6 @@
   "-f",
   "{connection_file}"
  ],
- "display_name": "Cosmosis-nbh",
+ "display_name": "Cosmosis-nb",
  "language": "python"
 }
