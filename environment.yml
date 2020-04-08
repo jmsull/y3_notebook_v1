@@ -1,4 +1,4 @@
-name: cosmosis-fff
+name: cosmosis-nb
 channels:
   - conda-forge
   - defaults
@@ -147,5 +147,5 @@ dependencies:
     - getdist==1.1.0
     - kombine==0.8.3
     - numdifftools==0.9.39
-prefix: $HOME/.conda/envs/cosmosis-fff
+prefix: $HOME/.conda/envs/cosmosis-nb
 

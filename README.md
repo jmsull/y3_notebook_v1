@@ -7,7 +7,7 @@ Instructions:
 
 2. Source setup-cosmosis-nersc from your cosmosis/config/ directory as you usually would 
 
-3. Run the included bash script (once only please or lines will be duplicated in the setup files)
+3. Run the included bash script, y3_notebook_setup.sh (once only please or lines will be duplicated in the setup files)
 
 4. Open the notebook from JupyterHub and select Cosmosis-nb from the dropdown menu
 

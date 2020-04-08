@@ -1,1 +1,3 @@
 These are the ini files I used to produce the mn chain used for comparison
+The default y3_3x2pt_methods params.ini file is the same as the one used for this comparison except for pm_marg=True and a couple of lines added under shear_m_bias
+The file with v1 pre-appended was run using the old "version 1" pipeline

@@ -4,7 +4,7 @@
 #cosmosis_dir=$( (builtin cd $( dirname ${BASH_SOURCE[0]}); /bin/pwd) )
 #cosmosis_dir=${cosmosis_dir%/config}
 #export COSMOSIS_SRC_DIR="$cosmosis_dir"
-source activate cosmosis-fff
+source activate cosmosis-nb
 #export COSMOSIS_SRC_DIR="/global/homes/j/jsull/code/cosmosis"
 export COSMOSIS_OMP=1
 #export OMP_NUM_THREADS=16
@@ -111,5 +111,5 @@ echo "CosmoSIS initialized"
 echo
 
 #set-git-prompt-repo-name
-exec $HOME/.conda/envs/cosmosis-fff/bin/python \
+exec $HOME/.conda/envs/cosmosis-nb/bin/python \
     -m ipykernel_launcher "$@"

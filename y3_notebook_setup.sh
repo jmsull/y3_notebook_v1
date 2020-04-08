@@ -7,12 +7,12 @@ COSMOSIS_SRC_DIR_copy=$COSMOSIS_SRC_DIR
 conda deactivate
 conda deactivate
 conda env create -f environment.yml
-source activate cosmosis-fff
-python -m ipykernel install --user --name cosmosis-fff --display-name Cosmosis-fff
+source activate cosmosis-nb
+python -m ipykernel install --user --name cosmosis-nb --display-name Cosmosis-nb
 #edit kernel spec and helper script
 kernelshell="${PWD}/kernel_cosmosis.sh"
 python add_line.py ./kernel.json $kernelshell 
-cp kernel.json $HOME/.local/share/jupyter/kernels/cosmosis-fff/kernel.json
+cp kernel.json $HOME/.local/share/jupyter/kernels/cosmosis-nb/kernel.json
 chmod u+x kernel_cosmosis.sh
 python add_line.py ./kernel_cosmosis.sh $COSMOSIS_SRC_DIR_copy 
 #get bayesfast
@@ -23,8 +23,8 @@ LDSHARED="cc -shared" CC=gcc python -m pip install -e .
 cd ../.
 echo 'Moving notebook up one directory so it can run properly.'
 mv des-y3-v1.ipynb ../
-echo "Moving original params.ini file to orig_3x2pt.ini"
-mv ../params.ini ../orig_3x2pt.ini
+echo "Moving original params.ini file to orig_3x2pt_params.ini"
+mv ../params.ini ../orig_3x2pt_params.ini
 echo "Copying up the bayesfast 2x2pt params.ini with pm_marg=False."
 cp ./mn_inifiles/params.ini ../
 echo 'Done'
