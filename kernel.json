@@ -1,5 +1,6 @@
 {
  "argv": [
+"/global/homes/j/jsull/code/y3x2pt_fresh/y3-3x2pt-methods/cosmosis/y3_notebook_v1/kernel_cosmosis.sh",
   "-f",
   "{connection_file}"
  ],

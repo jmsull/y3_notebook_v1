@@ -18,7 +18,7 @@ python add_line.py ./kernel_cosmosis.sh $COSMOSIS_SRC_DIR_copy
 #get bayesfast
 git clone https://github.com/HerculesJack/bayesfast
 cd bayesfast
-LDSHARED="cc -shared" CC=cc python -m pip install --user -e .
+LDSHARED="cc -shared" CC=gcc python -m pip install --user -e .
 #pip install -e 
 cd ../.
 echo 'Moving notebook up one directory so it can run properly.'
